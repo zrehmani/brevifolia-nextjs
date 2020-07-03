@@ -1,5 +1,5 @@
 ---
-label: Info Page
+label: Site Info
 hide_body: false
 fields:
 - name: title
@@ -7,3 +7,61 @@ fields:
   config:
     required: false
   label: title
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+- name: contact
+  type: field_group
+  config: {}
+  fields:
+  - name: website_url
+    type: text
+    config:
+      required: false
+    label: website_url
+  - name: made_with_url
+    type: text
+    config:
+      required: false
+    label: made_with_url
+  - name: email
+    type: text
+    config:
+      required: false
+    label: email
+  - name: twitter_handle
+    type: text
+    config:
+      required: false
+    label: twitter_handle
+  - name: twitter_url
+    type: text
+    config:
+      required: false
+    label: twitter_url
+  - name: github_handle
+    type: text
+    config:
+      required: false
+    label: github_handle
+  - name: github_url
+    type: text
+    config:
+      required: false
+    label: github_url
+  label: contact
+- name: repository_url
+  type: text
+  config:
+    required: false
+  label: repository_url
+- name: primary_color
+  type: color
+  label: primary_color
+  config:
+    required: false
+    color_format: Hex
+  description: Enter primary color here - adjust Info Page background color
+  default: "#B1C4BF"
