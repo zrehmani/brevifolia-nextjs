@@ -4,12 +4,18 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/data/config.json
+  label: Site Info
+  match: "**/*"
+- type: heading
+  label: Config
 - type: directory
   path: src/posts
   label: Blog Posts
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: heading
   label: Content
 upload_dir: uploads
