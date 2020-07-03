@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/data/info.md
   label: Info Page
-  read_only: false
 - type: document
   path: src/data/config.json
   label: Site Info
