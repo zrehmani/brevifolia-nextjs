@@ -1,4 +1,37 @@
 ---
 label: Blog
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: title
+- name: author
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: author
+  description: Choose author's name, add new author via Author List in Sidebar
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: hero_image
+  type: file
+  config:
+    maxSize: 64
+  label: hero_image
